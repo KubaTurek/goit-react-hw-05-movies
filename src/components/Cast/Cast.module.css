@@ -1,0 +1,8 @@
+.cast__list {
+  list-style: none;
+  display: flex;
+  gap: 5px;
+  margin-bottom: 10px;
+}
+
+.cast__nophoto {height: 100px; width: 66.66px}

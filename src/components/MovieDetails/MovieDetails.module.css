@@ -1,0 +1,38 @@
+.movie__container {
+  display: flex;
+  margin-top: 50px;
+}
+
+.movie__poster {
+  max-height: 350px;
+  margin-left: 20px;
+  margin-right: 20px;
+}
+
+.movie__details {
+  max-width: 500px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.movie__button {
+  width: 90px;
+  margin-top: 10px;
+  margin-left: 10px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+.movie__button:hover {
+  transform: scale(1.1);
+  background-color: rgb(156, 152, 158);
+}
+
+.movie__additional {
+  margin-left: 10px;
+}
+
+.outlet {
+  padding-bottom: 20px;
+  margin-left: 20px;
+}
