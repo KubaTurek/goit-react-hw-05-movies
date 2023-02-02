@@ -17,15 +17,15 @@ const Movies = () => {
     setSearchParams({ query: event.target.input.value });
   };
 
-  const fetchQueryDetails = async () => {
+  const fetchQueryDetails = async value => {
     setQueryDetails('');
-    const results = await fetchQuery(query);
+    const results = await fetchQuery(value);
     setQueryDetails(results);
   };
 
   useEffect(() => {
-    fetchQueryDetails();
-  }, [searchParams]);
+    fetchQueryDetails(query);
+  }, [query]);
 
   return (
     <div>
