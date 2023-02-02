@@ -25,7 +25,7 @@ const Movies = () => {
 
   useEffect(() => {
     fetchQueryDetails();
-  }, [query]);
+  }, [searchParams]);
 
   return (
     <div>
