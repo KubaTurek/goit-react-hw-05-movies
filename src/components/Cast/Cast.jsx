@@ -1,7 +1,7 @@
 import { useEffect, useState } from 'react';
-import { fetchCast } from 'components/api/fetchapi';
+import { fetchCast } from 'components/api/api';
 import css from './Cast.module.css';
-import noPhoto from './../../pictures/photo.jpg';
+import noPhoto from './../../images/photo.jpg';
 import { useParams } from 'react-router-dom';
 
 const Cast = () => {

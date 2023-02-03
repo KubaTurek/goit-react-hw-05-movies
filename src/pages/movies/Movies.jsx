@@ -1,7 +1,7 @@
 import { Link } from 'react-router-dom';
 import { useState, useEffect } from 'react';
 import { useSearchParams } from 'react-router-dom';
-import { fetchQuery } from 'components/api/fetchapi';
+import { fetchQuery } from 'components/api/api';
 import css from './movies.module.css';
 
 const Movies = () => {
@@ -43,12 +43,7 @@ const Movies = () => {
         </form>
       </div>
       <ul className={css.search__container}>
-        {!queryDetails ||
-        queryDetails.results === undefined ||
-        queryDetails.results.length === 0 ||
-        query === null ? (
-          <p></p>
-        ) : (
+        {queryDetails?.results?.length && query !== null ? (
           queryDetails.results.map(result => (
             <li key={result.id} className={css.search__item}>
               <Link
@@ -64,6 +59,8 @@ const Movies = () => {
               </Link>
             </li>
           ))
+        ) : (
+          <p></p>
         )}
       </ul>
     </div>

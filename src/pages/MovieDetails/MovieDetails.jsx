@@ -1,10 +1,10 @@
 import { Link, Outlet, useLocation } from 'react-router-dom';
 import { useEffect, useState } from 'react';
-import { fetchSingleMovie } from 'components/api/fetchapi';
+import { fetchSingleMovie } from 'components/api/api';
 import css from './MovieDetails.module.css';
 import { useParams } from 'react-router-dom';
 
-const MovieDetails = ({ castData, rewievData }) => {
+const MovieDetails = () => {
   const { movieId } = useParams();
   const [singleMovie, setSingleMovie] = useState();
   const location = useLocation();
@@ -51,12 +51,12 @@ const MovieDetails = ({ castData, rewievData }) => {
         <h2 className={css.movie__additional}>Additional Information</h2>
         <ul>
           <li>
-            <Link to={'cast'} state={{ from: './Movies' }}>
+            <Link to="cast" state={{ from: './Movies' }}>
               Cast
             </Link>
           </li>
           <li>
-            <Link to={'reviews'} state={{ from: './Movies' }}>
+            <Link to="reviews" state={{ from: './Movies' }}>
               Reviews
             </Link>
           </li>

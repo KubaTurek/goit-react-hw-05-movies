@@ -1,6 +1,6 @@
 import { Link } from 'react-router-dom';
 import { useEffect, useState } from 'react';
-import { fetchTrending } from 'components/api/fetchapi';
+import { fetchTrending } from 'components/api/api';
 import css from './home.module.css';
 
 const Home = () => {

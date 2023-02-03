@@ -1,5 +1,5 @@
 import { useEffect, useState } from 'react';
-import { fetchReviews } from 'components/api/fetchapi';
+import { fetchReviews } from 'components/api/api';
 import { useParams } from 'react-router-dom';
 
 import css from './Reviews.module.css';
