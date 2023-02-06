@@ -36,4 +36,10 @@
 
 .image {
   width: 100%;
+  box-shadow: 2px 2px 4px black;
 }
+
+.filmname {text-align: center; color: rgb(203, 195, 195); 
+  background-color: rgb(72, 71, 71); margin-top: 2px}
+
+.movies__link {text-decoration: none}

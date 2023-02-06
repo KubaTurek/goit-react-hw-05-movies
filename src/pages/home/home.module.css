@@ -16,10 +16,11 @@
   width: calc(95% / 5);
   margin-left: auto;
   margin-right: auto;
+  
 }
 
 .link {
-  color: rgb(51, 4, 126);
+  text-decoration: none
 }
 
 .trending {
@@ -33,7 +34,11 @@
 
 .trending__image {
   width: 100%;
+  box-shadow: 2px 2px 4px black;
 }
 .trending__image:hover {
   transform: scale(1.03);
 }
+
+.trending__filmname {text-align: center; color: rgb(203, 195, 195); 
+background-color: rgb(72, 71, 71); margin-top: 2px}

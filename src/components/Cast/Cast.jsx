@@ -22,7 +22,7 @@ const Cast = () => {
   return (
     <div>
       <h1>Cast</h1>
-      <ul>
+      <ul className={css.cast__container}>
         {castDetails === undefined || castDetails.length === 0 ? (
           <p>There are no casts available for this movie</p>
         ) : (

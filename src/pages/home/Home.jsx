@@ -35,7 +35,7 @@ const Home = () => {
                     className={css.trending__image}
                     src={`${imageURL}${movie.poster_path}`}
                   />
-                  <p>{movie.title ? movie.title : movie.name}</p>
+                  <p className={css.trending__filmname}>{movie.title ? movie.title : movie.name}</p>
                 </Link>
               </li>
             );

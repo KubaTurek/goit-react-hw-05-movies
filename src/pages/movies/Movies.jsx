@@ -48,6 +48,7 @@ const Movies = () => {
             <li key={result.id} className={css.search__item}>
               <Link
                 to={`${result.id}`}
+                className={css.movies__link}
                 state={{ from: `/Movies/?query=${query}` }}
               >
                 <img
@@ -55,7 +56,7 @@ const Movies = () => {
                   alt={result.title}
                   src={`${imageURL}${result.poster_path}`}
                 />
-                <p>{result.title}</p>
+                <p className={css.filmname}>{result.title}</p>
               </Link>
             </li>
           ))
